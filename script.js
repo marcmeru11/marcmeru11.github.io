@@ -4,14 +4,14 @@ const nav = document.querySelector('.nav-links');
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('active');
-    burger.classList.toggle('active');
+    burger.classList.toggle('open');
 });
 
 // Close menu when clicking on a link
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.remove('active');
-        burger.classList.remove('active');
+        burger.classList.remove('open');
     });
 });
 
