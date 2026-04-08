@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Formulane",
+        "category": "Chrome_Extension",
+        "desc": "Chrome extension that gives you real time information about F1 races in real time.",
+        "fullDesc": "Formulane is a chrome extension that gives you real time information about the races. It is a tool that helps you to be aware of what is happening in the race while working in another thing. Makes use of OpenF1 API to get the information.",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "github": "https://github.com/marcmeru11/Formulane",
+        "link": "",
+        "icon": "logo-chrome",
+        "image": "assets/img/formulane.png"
+    },
+    {
+        "id": 2,
+        "title": "Easy Mod for Silksong",
+        "category": "Videogame_Mod",
+        "desc": "A mod for made for \"Hollow Knight: Silksong\" that makes the game easier.",
+        "fullDesc": "A mod for made for \"Hollow Knight: Silksong\" that makes the game easier. A lot of people stuggle when playing the game due to its difficulty, so I decided to make a mod that makes the game easier.",
+        "tech": ["C#", "BepInEx", "Harmony", "Unity"],
+        "github": "https://github.com/marcmeru11/HKSEasyMod",
+        "link": "https://www.nexusmods.com/hollowknightsilksong/mods/588",
+        "icon": "game-controller-outline",
+        "downloads": "1100+",
+        "image": "assets/img/easyMod.webp"
+    },
+    {
+        "id": 3,
+        "title": "Enhanced Egg of Flealia",
+        "category": "Videogame_Mod",
+        "desc": "A mod for made for \"Hollow Knight: Silksong\" that adjusts the balance of the 'Egg of Flealia'.",
+        "fullDesc": "This mod improves the balance of the 'Egg of Flealia' by reducing the silk cost from 4 to 3 and removing the requirement of having full health to cast spells. Originally, this late-game tool was underutilized due to its strict restrictions; these changes allow for more strategic and frequent use without breaking the game's balance.",
+        "tech": ["C#", "BepInEx", "Harmony", "Unity"],
+        "github": "https://github.com/marcmeru11/HKSEnhancedEggOfFlealiaMod",
+        "link": "https://www.nexusmods.com/hollowknightsilksong/mods/628",
+        "icon": "game-controller-outline",
+        "downloads": "1300+",
+        "image": "assets/img/eggFlealia.webp"
+    },
+    {
+        "id": 4,
+        "title": "ESP32 NS GamePad",
+        "category": "Hardware",
+        "desc": "A gamepad for Nintendo Switch made with ESP32 and Arduino.",
+        "fullDesc": "A gamepad for Nintendo Switch made with ESP32 and Arduino. It is a project that we made for an optional college project. The gamepad case was designed by a friend of mine and 3D printed.",
+        "tech": ["C", "C++", "Arduino", "ESP32"],
+        "github": "https://github.com/marcmeru11/Mando-switch",
+        "link": "",
+        "icon": "game-controller-outline",
+        "image": "assets/img/controller.jpg"
+    }
+]

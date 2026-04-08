@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarcMeRu - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>MarcMeRu | Computer Science Student</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons for modern icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <nav>
             <div class="logo">MarcMeRu</div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -28,93 +36,41 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero">
+    <section id="start" class="hero">
         <div class="hero-content">
-            <h1>Hola, soy <span class="highlight">MarcMeRu</span></h1>
-            <p class="typing-text">Desarrollador Android | Kotlin & Compose</p>
-            <div class="cta-buttons">
-                <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
-                <a href="#contacto" class="btn-secondary">Contactar</a>
+            <h1 data-aos>Hi, I'm <span class="highlight">MarcMeRu</span></h1>
+            <p class="typing-text" data-aos>Computer Science Student</p>
+            <div class="cta-buttons" data-aos>
+                <a href="#projects" class="btn-primary">Explore Projects</a>
+                <a href="#contact" class="btn-secondary">Let's Talk</a>
             </div>
         </div>
     </section>
 
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="about">
+    <section id="about" class="about">
         <div class="container">
-            <h2>Sobre mí</h2>
-            <div class="about-content">
+            <h2 data-aos>About Me</h2>
+            <div class="about-content" data-aos>
                 <div class="about-text">
-                    <p>Estudiante de Informática apasionado por el desarrollo móvil. Especializado en crear aplicaciones Android nativas con Kotlin y Jetpack Compose.</p>
-                    <p>Me enfoco en escribir código limpio, escalable y mantener las mejores prácticas de desarrollo. Experiencia con arquitecturas MVVM, Clean Architecture, y APIs REST.</p>
+                    <p>Computer Science student passionate about the mobile ecosystem. I specialize in bringing ideas to life through native Android applications using modern technologies like Kotlin and Jetpack Compose.</p>
+                    <p>My focus is on creating exceptional user experiences, robust architectures (MVVM, Clean Architecture), and highly maintainable code. Always looking for new technological challenges to expand my limits.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="projects">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2>Proyectos Destacados</h2>
-            <div class="projects-grid">
-                <!-- Proyecto 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Nombre del Proyecto</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/tuusuario/proyecto1" target="_blank">
-                                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p>Breve descripción del proyecto. Tecnologías utilizadas: Kotlin, Compose, Room, Retrofit.</p>
-                    <div class="tech-tags">
-                        <span>Kotlin</span>
-                        <span>Compose</span>
-                        <span>MVVM</span>
-                    </div>
+            <h2 data-aos>My Projects</h2>
+
+            <div class="projects-container">
+                <!-- Porject Categories Filter -->
+                <div class="category-filter" data-aos>
+                    <!-- Los filtros se cargarán dinámicamente desde proyectos.json -->
                 </div>
 
-                <!-- Proyecto 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Segundo Proyecto</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/tuusuario/proyecto2" target="_blank">
-                                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p>API REST con FastAPI y MongoDB. Sistema de autenticación JWT.</p>
-                    <div class="tech-tags">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Tercer Proyecto</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/tuusuario/proyecto3" target="_blank">
-                                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p>Infraestructura con Docker Compose. Microservicios y networking.</p>
-                    <div class="tech-tags">
-                        <span>Docker</span>
-                        <span>Linux</span>
-                        <span>TCP/UDP</span>
-                    </div>
+                <div class="projects-grid">
+                    <!-- Proyectos cargados dinámicamente desde proyectos.json -->
                 </div>
             </div>
         </div>
@@ -123,36 +79,33 @@
     <!-- Skills -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Tecnologías</h2>
+            <h2 data-aos>Tech Stack</h2>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Mobile</h3>
+                <div class="skill-card" data-aos>
+                    <h3>Mobile Development</h3>
                     <ul>
-                        <li>Kotlin</li>
-                        <li>Jetpack Compose</li>
-                        <li>Room Database</li>
-                        <li>Retrofit</li>
-                        <li>MVVM</li>
+                        <li>Jetpack Compose & Kotlin</li>
+                        <li>Android Architecture Components</li>
+                        <li>Dependency Injection (Hilt/Koin)</li>
+                        <li>Coroutines & Flow</li>
                     </ul>
                 </div>
-                <div class="skill-card">
-                    <h3>Backend</h3>
+                <div class="skill-card" data-aos>
+                    <h3>Backend & Data</h3>
                     <ul>
-                        <li>Python</li>
-                        <li>FastAPI</li>
-                        <li>MongoDB</li>
-                        <li>SQLite</li>
-                        <li>REST APIs</li>
+                        <li>Python (FastAPI / Flask)</li>
+                        <li>SQL & NoSQL (MongoDB, SQLite)</li>
+                        <li>RESTful API Design</li>
+                        <li>Authentication & Security</li>
                     </ul>
                 </div>
-                <div class="skill-card">
-                    <h3>DevOps</h3>
+                <div class="skill-card" data-aos>
+                    <h3>Infrastructure</h3>
                     <ul>
-                        <li>Docker</li>
-                        <li>Docker Compose</li>
-                        <li>Linux/CentOS</li>
-                        <li>Git/GitHub</li>
-                        <li>Networking</li>
+                        <li>Docker & Containerization</li>
+                        <li>Linux System Administration</li>
+                        <li>CI/CD Workflows</li>
+                        <li>Networking Essentials</li>
                     </ul>
                 </div>
             </div>
@@ -160,38 +113,78 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Contacto</h2>
-            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
-            <div class="contact-links">
-                <a href="mailto:tu@email.com" class="contact-btn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                    </svg>
-                    Email
-                </a>
-                <a href="https://github.com/tuusuario" target="_blank" class="contact-btn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    GitHub
-                </a>
-                <a href="https://linkedin.com/in/tuperfil" target="_blank" class="contact-btn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    LinkedIn
-                </a>
+            <h2 data-aos>Contact</h2>
+            <div class="contact-container" data-aos>
+                <p>Have a project in mind or just want to say hi? My inbox is always open.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/marcmeru11" target="_blank" class="contact-btn">
+                        <ion-icon name="logo-github"></ion-icon>
+                        GitHub
+                    </a>
+                    <a href="#" target="_blank" class="contact-btn">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 MarcMeRu. Hecho con ❤️</p>
+        <div class="container">
+            <p>&copy; 2025 MarcMeRu. Passion based code.</p>
+        </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-content split-layout">
+                <div class="modal-hero-side">
+                    <div id="modal-image-container" class="modal-image-fill">
+                        <ion-icon name="folder-open-outline" id="modal-project-icon"></ion-icon>
+                    </div>
+                </div>
+                <div class="modal-details-side">
+                    <div class="modal-details-inner">
+                        <div class="modal-header">
+                            <h2 id="modal-title">Project Title</h2>
+                            <div id="modal-downloads" class="download-badge"></div>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modal-description">Full project description goes here...</p>
+                        </div>
+                        <div class="modal-footer-meta">
+                            <div class="meta-item">
+                                <h4>Tech Stack</h4>
+                                <div id="modal-tags" class="tech-tags horizontal"></div>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Links</h4>
+                                <div class="modal-actions">
+                                    <a href="#" id="modal-github" target="_blank" class="btn-secondary">
+                                        <ion-icon name="logo-github"></ion-icon> GitHub
+                                    </a>
+                                    <a href="#" id="modal-link" target="_blank" class="btn-primary">
+                                        <ion-icon name="open-outline"></ion-icon> Visit Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
