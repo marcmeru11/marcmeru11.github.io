@@ -48,5 +48,29 @@
         "link": "",
         "icon": "game-controller-outline",
         "image": "assets/img/Controller.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Flat-Former",
+        "category": "Videogame",
+        "desc": "A 2D platformer game made with Godot.",
+        "fullDesc": "A 2D platformer game made with Godot. It is a project that I made for fun. It is a simple platformer game with basic mechanics.",
+        "tech": ["GDScript", "Godot"],
+        "github": "https://github.com/marcmeru11/Flat-Former",
+        "link": "",
+        "icon": "game-controller-outline",
+        "image": "assets/img/Flat-former.png"
+    },
+    {
+        "id": 6,
+        "title": "Bulledge",
+        "category": "Videogame",
+        "desc": "A Bullet Hell game made with Godot.",
+        "fullDesc": "A Bullet Hell game made with Godot. It is a project that I made for fun. It is a simple bullet hell game with basic mechanics.",
+        "tech": ["GDScript", "Godot"],
+        "github": "https://github.com/marcmeru11/Bulledge",
+        "link": "",
+        "icon": "game-controller-outline",
+        "image": "assets/img/bulledge.png"
     }
 ]
