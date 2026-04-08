@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'ndot-47';
+  src: url('assets/ndot-47.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -22,7 +30,7 @@
 }
 
 body {
-  font-family: 'Outfit', 'Orbitron', sans-serif; /* Added Outfit for better readability */
+  font-family: 'Outfit', 'ndot-47', sans-serif; /* Added Outfit for better readability */
   background-color: var(--bg);
   background-image: 
     radial-gradient(circle at 20% 20%, rgba(157, 80, 187, 0.15) 0%, transparent 40%),
@@ -60,14 +68,15 @@ nav {
 }
 
 .logo {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'ndot-47', sans-serif;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 2px;
   filter: drop-shadow(0 0 8px rgba(0, 255, 247, 0.3));
 }
 
@@ -148,10 +157,13 @@ nav {
 
 .hero-content h1 {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
+  font-family: 'ndot-47', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
   margin-bottom: 1rem;
   line-height: 1.1;
+  -webkit-font-smoothing: none;
 }
 
 .highlight {
@@ -214,11 +226,15 @@ section {
 }
 
 h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
+  font-family: 'ndot-47', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
   text-align: center;
   margin-bottom: 4rem;
   position: relative;
+  -webkit-font-smoothing: none;
 }
 
 h2::after {
@@ -391,8 +407,11 @@ h2::after {
 }
 
 .project-header h3 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.35rem; /* Slightly larger title */
+  font-family: 'ndot-47', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: var(--text);
   line-height: 1.3;
 }
@@ -478,7 +497,10 @@ h2::after {
 }
 
 .skill-card h3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'ndot-47', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: var(--neon-cyan);
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
@@ -798,7 +820,7 @@ footer {
 }
 
 .meta-item h4 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'ndot-47', sans-serif;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 2px;
