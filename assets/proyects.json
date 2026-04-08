@@ -66,10 +66,10 @@
         "title": "Bulledge",
         "category": "Videogame",
         "desc": "A Bullet Hell game made with Godot.",
-        "fullDesc": "A Bullet Hell game made with Godot. It is a project that I made for fun. It is a simple bullet hell game with basic mechanics.",
+        "fullDesc": "A Bullet Hell game made with Godot. It is a project that I made for fun. It is a simple bullet hell game with basic mechanics. Playable in the browser through the project link.",
         "tech": ["GDScript", "Godot"],
         "github": "https://github.com/marcmeru11/Bulledge",
-        "link": "",
+        "link": "https://marcmeru.dev/bulledgeweb",
         "icon": "game-controller-outline",
         "image": "assets/img/bulledge.png"
     }
