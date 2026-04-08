@@ -1,0 +1,24 @@
+# Bloquear los rastreadores de IA más comunes
+User-agent: GPTBot
+Disallow: /assets/
+Disallow: /proyects.json
+
+User-agent: ChatGPT-User
+Disallow: /assets/
+Disallow: /proyects.json
+
+User-agent: Google-Extended
+Disallow: /assets/
+Disallow: /proyects.json
+
+User-agent: CCBot
+Disallow: /assets/
+Disallow: /proyects.json
+
+User-agent: Anthropic-AI
+Disallow: /assets/
+Disallow: /proyects.json
+
+# Opcional: Bloquear el acceso a todo para estos bots
+# User-agent: GPTBot
+# Disallow: /
