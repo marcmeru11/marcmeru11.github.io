@@ -69,7 +69,7 @@
         "fullDesc": "A Bullet Hell game made with Godot. It is a project that I made for fun. It is a simple bullet hell game with basic mechanics. Playable in the browser through the project link.",
         "tech": ["GDScript", "Godot"],
         "github": "https://github.com/marcmeru11/Bulledge",
-        "link": "https://marcmeru.dev/bulledgeweb",
+        "link": "https://marcmeru.dev/Bulledge",
         "icon": "game-controller-outline",
         "image": "assets/img/bulledge.png"
     }
