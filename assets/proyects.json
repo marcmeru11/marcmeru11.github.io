@@ -76,7 +76,7 @@
     {
         "id": 7,
         "title": "Knucklebones",
-        "category": "Web_App",
+        "category": "Web_App Videogame",
         "desc": "A web app to play Knucklebones with your friends.",
         "fullDesc": "A web app to play Knucklebones with your friends. Inspired by the game \"Cult of the Lamb\" Playable in the browser through the project link. The connection between players is made through Firebase Realtime Database.",
         "tech": ["HTML", "CSS", "JavaScript", "Firebase"],
