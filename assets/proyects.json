@@ -72,5 +72,17 @@
         "link": "https://marcmeru.dev/Bulledge",
         "icon": "game-controller-outline",
         "image": "assets/img/bulledge.png"
+    },
+    {
+        "id": 7,
+        "title": "Knucklebones",
+        "category": "Web_App",
+        "desc": "A web app to play Knucklebones with your friends.",
+        "fullDesc": "A web app to play Knucklebones with your friends. Playable in the browser through the project link. The connection between players is made through Firebase Realtime Database.",
+        "tech": ["HTML", "CSS", "JavaScript", "Firebase"],
+        "github": "https://github.com/marcmeru11/Knucklebones",
+        "link": "https://marcmeru.dev/Knucklebones",
+        "icon": "game-controller-outline",
+        "image": "assets/img/knucklebones.png"
     }
 ]
