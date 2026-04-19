@@ -69,7 +69,7 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="skills">
+    <section id="tech-stack" class="tech-stack">
         <div class="container">
             <h2 data-aos>Tech Stack</h2>
             <div class="skills-grid">
@@ -144,6 +144,9 @@
                     <div id="modal-image-container" class="modal-image-fill">
                         <ion-icon name="folder-open-outline" id="modal-project-icon"></ion-icon>
                     </div>
+                    <button id="modal-view-full" class="view-full-btn" aria-label="View full image" title="View full image">
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </button>
                 </div>
                 <div class="modal-details-side">
                     <div class="modal-details-inner">
@@ -173,6 +176,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox-modal" class="modal lightbox">
+        <div class="modal-overlay"></div>
+        <div class="modal-container lightbox-container">
+            <button class="modal-close lightbox-close" aria-label="Close lightbox">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="Full image">
             </div>
         </div>
     </div>

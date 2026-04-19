@@ -579,29 +579,45 @@ footer {
   transform: translateY(0);
 }
 
-.modal-close {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background: var(--bg);
+/* Circular Control Buttons (Unified Nothing Aesthetic) */
+.modal-close,
+.view-full-btn,
+.lightbox-close {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-hover);
   color: var(--text);
-  font-size: 1.5rem;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.3rem;
+}
+
+.modal-close:hover,
+.view-full-btn:hover,
+.lightbox-close:hover {
+  background: var(--accent-red);
+  color: var(--text);
+  font-size: 1.5rem;
+  border-color: var(--accent-red);
+  transform: scale(1.05);
+}
+
+.modal-close, .lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
   z-index: 2005;
 }
 
-.modal-close:hover {
-  background: var(--text);
-  color: var(--bg);
-  transform: rotate(90deg);
+.modal-close:hover, .lightbox-close:hover {
+  transform: scale(1.05) rotate(90deg);
 }
 
 .modal-content {
@@ -620,6 +636,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .modal-image-fill {
@@ -641,6 +658,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.view-full-btn {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: none; /* Hidden by default, JS will show it */
+  z-index: 2010;
+}
+
+.view-full-btn ion-icon {
+  pointer-events: none;
 }
 
 .modal-details-side {
@@ -713,6 +742,7 @@ footer {
   justify-content: center;
   gap: 0.75rem;
   padding: 0.8rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Utilidades */
@@ -725,7 +755,8 @@ footer {
   gap: 0.3rem;
 }
 
-body.modal-open {
+body.modal-open,
+body.lightbox-open {
   overflow: hidden;
 }
 
@@ -790,5 +821,54 @@ body.modal-open {
   }
   .burger.open .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/* Lightbox specific styles */
+.modal.lightbox {
+  z-index: 3000;
+}
+
+.modal.lightbox .modal-overlay {
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.lightbox-container {
+  background: transparent;
+  border: none;
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  max-height: 90vh;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+
+.lightbox-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--border-hover);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+  z-index: 3010;
+}
+
+@media (max-width: 768px) {
+  .lightbox-container {
+    width: 95%;
   }
 }

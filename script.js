@@ -202,11 +202,18 @@ const modalDesc = document.getElementById('modal-description');
 const modalTags = document.getElementById('modal-tags');
 const modalGithub = document.getElementById('modal-github');
 const modalLink = document.getElementById('modal-link');
-const modalClose = document.querySelector('.modal-close');
-const modalOverlay = document.querySelector('.modal-overlay');
+const modalClose = document.querySelector('#project-modal .modal-close');
+const modalOverlay = document.querySelector('#project-modal .modal-overlay');
 const modalIcon = document.getElementById('modal-project-icon');
 const modalDownloads = document.getElementById('modal-downloads');
 const modalImageContainer = document.getElementById('modal-image-container');
+const modalViewFull = document.getElementById('modal-view-full');
+
+// --- Lightbox Logic ---
+const lightboxModal = document.getElementById('lightbox-modal');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxClose = document.querySelector('#lightbox-modal .modal-close');
+const lightboxOverlay = document.querySelector('#lightbox-modal .modal-overlay');
 
 function openProjectModal(card) {
     const title = card.getAttribute('data-title');
@@ -241,8 +248,10 @@ function openProjectModal(card) {
     // Modal Image/Icon handling
     if (image) {
         modalImageContainer.innerHTML = `<img src="${image}" alt="${title}">`;
+        modalViewFull.style.display = 'flex';
     } else {
         modalImageContainer.innerHTML = `<ion-icon name="${icon}"></ion-icon>`;
+        modalViewFull.style.display = 'none';
     }
 
     // Downloads badge
@@ -274,6 +283,25 @@ modalClose.addEventListener('click', () => {
 modalOverlay.addEventListener('click', () => {
     modal.classList.remove('active');
     document.body.classList.remove('modal-open');
+});
+
+modalViewFull.addEventListener('click', () => {
+    const img = modalImageContainer.querySelector('img');
+    if (img && img.src) {
+        lightboxImage.src = img.src;
+        lightboxModal.classList.add('active');
+        document.body.classList.add('lightbox-open');
+    }
+});
+
+lightboxClose.addEventListener('click', () => {
+    lightboxModal.classList.remove('active');
+    document.body.classList.remove('lightbox-open');
+});
+
+lightboxOverlay.addEventListener('click', () => {
+    lightboxModal.classList.remove('active');
+    document.body.classList.remove('lightbox-open');
 });
 
 // Initialize
