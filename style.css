@@ -666,8 +666,8 @@ footer {
   position: absolute;
   bottom: 1.5rem;
   right: 1.5rem;
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   background: var(--glass);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -678,7 +678,7 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 2010;
+  z-index: 2015; /* Ensure it stays on top of the image and overlay */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 1.4rem;
 }
