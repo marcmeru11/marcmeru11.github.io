@@ -285,10 +285,11 @@ modalOverlay.addEventListener('click', () => {
     document.body.classList.remove('modal-open');
 });
 
-modalViewFull.addEventListener('click', () => {
-    const img = modalImageContainer.querySelector('img');
-    if (img && img.src) {
-        lightboxImage.src = img.src;
+modalViewFull.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const currentImg = modalImageContainer.querySelector('img');
+    if (currentImg && currentImg.src) {
+        lightboxImage.src = currentImg.src;
         lightboxModal.classList.add('active');
         document.body.classList.add('lightbox-open');
     }
