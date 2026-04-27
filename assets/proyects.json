@@ -91,7 +91,7 @@
         "category": "Web_Dev",
         "desc": "A standalone, modular tournament bracket renderer for HTML5 Canvas.",
         "fullDesc": "A highly customizable and performance-oriented engine for displaying tournament progression on HTML5 Canvas. It features interactive camera controls (pan and zoom), smart constraints, comprehensive visual themes, dynamic layouts (single and split), and adaptive box sizing. Built entirely with vanilla JavaScript and zero dependencies. Created for a tournament management college project.",
-        "tech": ["HTML5", "JavaScript", "npm", "Vitest"],
+        "tech": ["HTML", "JavaScript", "npm", "Vitest"],
         "github": "https://github.com/marcmeru11/TournamentVisualizer",
         "link": "https://www.npmjs.com/package/tournament-visualizer",
         "icon": "trophy-outline",
