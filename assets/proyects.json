@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Formulane",
-        "category": "Chrome_Extension",
+        "category": "Chrome_Extension Web_Dev",
         "desc": "Chrome extension that gives you real time information about F1 races in real time. Waiting for Chrome store approval.",
         "fullDesc": "Formulane is a chrome extension that gives you real time information about the races. It is a tool that helps you to be aware of what is happening in the race while working in another thing. Makes use of OpenF1 API to get the information.",
         "tech": ["HTML", "CSS", "JavaScript"],
@@ -76,7 +76,7 @@
     {
         "id": 7,
         "title": "Knucklebones",
-        "category": "Web_App Videogame",
+        "category": "Web_Dev Videogame",
         "desc": "A web app to play Knucklebones with your friends.",
         "fullDesc": "A web app to play Knucklebones with your friends. Inspired by the game \"Cult of the Lamb\" Playable in the browser through the project link. The connection between players is made through Firebase Realtime Database.",
         "tech": ["HTML", "CSS", "JavaScript", "Firebase"],
@@ -84,5 +84,17 @@
         "link": "https://marcmeru.dev/Knucklebones",
         "icon": "game-controller-outline",
         "image": "assets/img/knucklebones.png"
+    },
+    {
+        "id": 9,
+        "title": "Tournament Visualizer",
+        "category": "Web_Dev",
+        "desc": "A standalone, modular tournament bracket renderer for HTML5 Canvas.",
+        "fullDesc": "A highly customizable and performance-oriented engine for displaying tournament progression on HTML5 Canvas. It features interactive camera controls (pan and zoom), smart constraints, comprehensive visual themes, dynamic layouts (single and split), and adaptive box sizing. Built entirely with vanilla JavaScript and zero dependencies. Created for a tournament management college project.",
+        "tech": ["HTML5", "JavaScript", "npm", "Vitest"],
+        "github": "https://github.com/marcmeru11/TournamentVisualizer",
+        "link": "https://www.npmjs.com/package/tournament-visualizer",
+        "icon": "trophy-outline",
+        "image": "assets/img/tournament-visualizer.png"
     }
 ]
