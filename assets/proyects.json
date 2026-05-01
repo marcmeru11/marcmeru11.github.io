@@ -3,11 +3,11 @@
         "id": 1,
         "title": "Formulane",
         "category": "Chrome_Extension Web_Dev",
-        "desc": "Chrome extension that gives you real time information about F1 races in real time. Waiting for Chrome store approval.",
+        "desc": "Chrome extension that gives you real time information about F1 races in real time.",
         "fullDesc": "Formulane is a chrome extension that gives you real time information about the races. It is a tool that helps you to be aware of what is happening in the race while working in another thing. Makes use of OpenF1 API to get the information.",
         "tech": ["HTML", "CSS", "JavaScript"],
         "github": "https://github.com/marcmeru11/Formulane",
-        "link": "",
+        "link": "https://chromewebstore.google.com/detail/bbakajdpnndfiikameiphgolljmiddjo",
         "icon": "logo-chrome",
         "image": "assets/img/formulane.png"
     },
