@@ -96,5 +96,17 @@
         "link": "https://www.npmjs.com/package/tournament-visualizer",
         "icon": "trophy-outline",
         "image": "assets/img/tournament-visualizer.png"
+    },
+    {
+        "id": 10,
+        "title": "MindLink",
+        "category": "Web_Dev Videogame",
+        "desc": "A web adaptation of a popular social guessing game for local multiplayer.",
+        "fullDesc": "MindLink is a web app designed to play a social guessing game with your friends on a single device. One player acts as the Psychic giving a clue, and the rest of the team must guess where on a hidden spectrum the clue belongs. It features customizable word packs, JSON import/export, and dynamic scoring with smooth animations.",
+        "tech": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+        "github": "https://github.com/marcmeru11/wavelength",
+        "link": "https://marcmeru.dev/wavelength",
+        "icon": "game-controller-outline",
+        "image": "assets/img/mindlink.png"
     }
 ]
